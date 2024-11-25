@@ -12,6 +12,7 @@ const debug = Debug(DEBUG_NAMESPACE);
 async function main() {
     const command = createFireblocksJsonRpcCommand().parse()
     const options: ServerConfig = command.opts()
+    options.vaultAccountIds = ['13']
     const log = (message: string) => !(options as any).quiet && !(options as any).raw && console.log(message)
 
     if (options.verbose) {

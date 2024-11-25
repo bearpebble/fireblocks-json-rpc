@@ -61,6 +61,7 @@ async function createServer(this: any, config: ServerConfig): Promise<{ server: 
             fireblocksProvider.send(jsonRpcRequest, (error, providerResponse) => {
                 if (error) {
                     debug("Error received from FireblocksWeb3Provider: ", error)
+                    console.log("Error", error)
                     providerResponse = {
                         "id": jsonRpcRequest.id,
                         "jsonrpc": jsonRpcRequest.jsonrpc,

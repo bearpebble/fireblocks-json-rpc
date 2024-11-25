@@ -12,6 +12,7 @@ type ServerConfig = FireblocksProviderConfig & {
     env?: string,
     suppressHostWarning?: boolean,
     assetId?: string,
+    vaultAccountIds?: number | number[] | string | string[],
 }
 
 export { ServerConfig }
