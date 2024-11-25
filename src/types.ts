@@ -11,6 +11,7 @@ type ServerConfig = FireblocksProviderConfig & {
     raw?: boolean,
     env?: string,
     suppressHostWarning?: boolean,
+    assetId?: string,
 }
 
 export { ServerConfig }
